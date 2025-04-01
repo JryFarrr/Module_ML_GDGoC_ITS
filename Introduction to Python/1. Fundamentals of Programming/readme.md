@@ -1,0 +1,357 @@
+# Pengenalan Pemrograman Python
+
+![Python GIF](https://media.giphy.com/media/ZBxATDPH7pHAk/giphy.gif)
+
+Selamat datang di dunia pemrograman Python! Dalam modul ini, saya akan menjelaskan dasar-dasar pemrograman Python, termasuk apa itu IDE (khususnya Google Colab sebagai tempat menulis kode), apa itu coding, dan bagaimana struktur program Python itu dibentuk. Saya akan berusaha membuat penjelasan ini sederhana, ramah, dan mudah dipahami—seperti ngobrol santai bareng temen—supaya kamu merasa nyaman meskipun baru pertama kali belajar pemrograman. Yuk, kita mulai!
+
+---
+
+## IDE (Integrated Development Environment)
+Sebelum kita mulai "ngoding" (istilah keren untuk menulis kode), kita butuh tempat untuk menulis dan menjalankan kode tersebut. Nah, tempat ini disebut **IDE** atau **Integrated Development Environment**. Bayangin IDE sebagai "meja kerja" yang udah dilengkapin sama semua alat yang kamu butuhin buat bikin program.
+
+**Apa itu IDE?**  
+Sederhananya, IDE adalah aplikasi yang bantu kamu menulis, menguji, dan menjalankan kode. Biasanya, IDE punya fitur seperti editor kode (tempat ngetik), interpreter atau compiler (buat "nerjemahin" kode ke bahasa komputer), dan kadang juga debugger (buat nyari kesalahan di kode). Dengan IDE, proses ngoding jadi lebih gampang dan terorganisir.
+
+**Google Colab: IDE Pilihan Kita**  
+Di modul ini, kita bakal pakai **Google Colab** sebagai IDE-nya. Google Colab itu seperti "bengkel online" yang bisa kamu akses lewat browser. Kamu nggak perlu install apa-apa di laptop atau komputer—cukup buka [colab.research.google.com](https://colab.research.google.com), login pake akun Google, dan langsung bisa mulai ngoding pake Python. Cocok banget buat pemula!
+
+- **Kenapa Google Colab Keren?**
+  - Gratis dan gampang diakses, asal ada internet.
+  - Nggak perlu repot install Python atau software lain.
+  - Bisa kerja bareng temen, kayak edit Google Docs.
+  - Udah include banyak pustaka Python yang sering dipake.
+
+Jadi, kalau kamu belum coba, buka aja Google Colab sekarang, klik "New Notebook", dan kita siap mulai petualangan ngoding bareng!
+
+---
+
+## Apa Itu Coding?
+Sekarang, kita masuk ke pertanyaan: **coding itu apa sih?** Coding adalah proses nulis instruksi pake bahasa pemrograman supaya komputer bisa ngerti dan melakukan apa yang kita mau. Kode itu ibarat "resep" yang kita kasih ke komputer—misalnya, "cetak tulisan ini" atau "hitung angka ini".
+
+**Analogi Simpel**  
+Bayangin kamu lagi nyanyi bareng temen. Kamu bilang, "Ayo, nyanyi lagu ini, mulai dari bait pertama, volume kenceng!" Nah, komputer juga butuh instruksi kayak gitu, tapi dalam bahasa khusus yang dia ngerti. Dalam kasus kita, bahasa itu adalah **Python**.
+
+![Inspirational GIF](https://stemettes.org/zine/wp-content/uploads/sites/3/2021/08/giphy-5.gif)
+
+**Python: Bahasa yang Ramah**  
+Python adalah bahasa pemrograman yang terkenal karena gampang dipelajari dan fleksibel. Sintaksnya (cara nulisnya) mirip bahasa Inggris, jadi nggak bikin pusing. Mau bikin apa aja, dari program kecil sampe proyek besar kayak analisis data atau game, Python bisa handle!
+
+---
+
+## Struktur Program Python
+Setiap program Python punya struktur dasar biar kode-nya rapi dan bisa jalan dengan baik. Biar nggak bingung, kita mulai dari contoh sederhana dulu, trus kita bedah bagian-bagiannya.
+
+**Contoh Program: "Hello, World!"**  
+Ini adalah program Python paling basic yang bakal nyanyi "Hello, World!" di layar kamu:
+
+```python
+# Program sederhana buat nyapa dunia
+print("Hello, World!")
+```
+
+Kalau kamu ketik ini di Google Colab dan klik tombol "Run" (segitiga kecil di sebelah kiri kode), bakal keluar:
+
+```
+Hello, World!
+```
+
+Simpel, kan? Nah, sekarang kita lihat struktur program Python secara umum.
+
+**a. Impor Modul**  
+Di awal program, kadang kita perlu "manggil" modul atau pustaka yang udah ada. Modul ini kayak kotak alat yang isinya fungsi-fungsi siap pakai. Misalnya, kalo mau hitung matematika rumit, kita bisa impor modul `math`.
+
+Contoh:
+```python
+import math
+print(math.sqrt(16))  # Output: 4.0
+```
+
+Tapi di contoh "Hello, World!" tadi, kita nggak perlu impor apa-apa karena fungsi `print()` udah jadi bawaan Python.
+
+**b. Definisi Fungsi**  
+Fungsi adalah "resep kecil" dalam program yang bisa kita panggil kapan aja. Kerennya, kita bisa bikin fungsi sendiri. Meskipun di contoh simpel tadi nggak ada fungsi buatan, ini contoh kalo kita mau bikin:
+
+```python
+def nyanyi():
+    print("Lalala~")
+```
+
+Nanti kalo kita panggil `nyanyi()`, dia bakal nyanyi "Lalala~".
+
+**c. Pernyataan Utama**  
+Bagian utama program adalah tempat kode mulai "hidup". Di Python, kode yang kita tulis langsung (tanpa masuk fungsi) bakal dijalanin dari atas ke bawah. Di contoh "Hello, World!", pernyataan `print("Hello, World!")` adalah bagian utama.
+
+Kalo programnya lebih gede, biasanya kita pake `if __name__ == "__main__":` biar rapi. Contoh:
+
+```python
+if __name__ == "__main__":
+    print("Hello, World!")
+```
+
+Ini ngasih tahu Python, "Jalankan ini kalo aku yang utama!"
+
+**d. Komentar**  
+Komentar adalah catatan kecil yang kita tulis di kode, tapi nggak bakal dijalanin sama Python. Fungsinya buat jelasin kode biar orang lain (atau kita sendiri nanti) ngerti maksudnya. Komentar dimulai pake tanda `#`.
+
+Contoh:
+```python
+# Ini cuma catatan, nggak ngaruh ke program
+print("Hello, World!")  # Nyapa dunia nih
+```
+
+Kalo mau bikin komentar panjang, bisa pake tiga kutip:
+
+```python
+'''
+Ini komentar panjang
+Bisa sampe beberapa baris
+'''
+```
+
+**e. Whitespace (Spasi dan Indentasi)**  
+Python suka banget sama kerapihan! Indentasi (spasi di awal baris) itu wajib buat nunjukin blok kode, misalnya di dalam fungsi. Baris kosong juga sering dipake buat pisahin bagian kode biar enak dibaca.
+
+Contoh:
+```python
+def halo():
+    print("Halo!")  # Harus ada spasi di awal
+print("Selesai")    # Nggak di dalam fungsi, jadi nggak indent
+```
+
+Berikut adalah section **"Keyword dan Identifier"** untuk bahasa Python yang telah disatukan dengan penjelasan tambahan tentang keyword dan identifier, sesuai dengan kerangka yang Anda minta. Semuanya disusun agar lebih ringkas dan terintegrasi.
+
+---
+
+## Keyword dan Identifier
+
+Keyword adalah kata-kata yang telah dipesan (reserved) oleh Python dan memiliki makna khusus dalam sintaks bahasa ini, seperti perintah atau struktur tertentu. Contohnya, `if`, `else`, `for`, dan `print` digunakan untuk mengontrol alur program atau mencetak output, dan tidak boleh digunakan sebagai nama variabel atau fungsi. Berikut adalah daftar beberapa keyword di Python (berdasarkan versi terbaru, seperti Python 3.11):
+
+```
+False    await    else     import   pass
+None     break    except   in       raise
+True     class    finally  is       return
+and      continue for      lambda   try
+as       def      from     not      while
+assert   del      global   or       with
+async    elif     if       yield    nonlocal
+```
+
+Sementara itu, identifier adalah nama yang diberikan oleh pengguna untuk entitas seperti variabel, fungsi, atau kelas. Misalnya, `nilai`, `umur`, `total_harga`, atau `_kunci` adalah identifier yang valid. Identifier harus mengikuti aturan berikut:
+1. **Bukan keyword**: Tidak boleh menggunakan kata seperti `if` atau `for`.
+2. **Hanya boleh terdiri dari huruf (a-z, A-Z), angka (0-9), dan underscore (_)**: Contoh, `total1` atau `hasil_akhir`.
+3. **Tidak boleh mengandung spasi atau karakter khusus**: `total harga` atau `nama#` tidak valid.
+4. **Harus dimulai dengan huruf atau underscore**: `1total` tidak diperbolehkan, tapi `_total` atau `total` boleh.
+5. **Case-sensitive**: `Nama` dan `nama` dianggap berbeda.
+
+**Contoh Identifier yang Valid**:
+- `umur`
+- `total_harga`
+- `_kunci`
+- `HitungLuas`
+
+**Contoh yang Tidak Valid**:
+- `if` (keyword)
+- `2nd` (dimulai dengan angka)
+- `total harga` (mengandung spasi)
+
+### **Contoh Kode**
+- Berikut adalah contoh penggunaan keyword dan identifier dalam Python:
+```python
+# Contoh keyword: 'if', 'else', dan 'print'
+nilai = 80  # 'nilai' adalah identifier
+if nilai > 75:  # 'if' adalah keyword
+    print("Lulus")  # 'print' adalah keyword
+else:  # 'else' adalah keyword
+    print("Tidak Lulus")
+```
+
+### **Program untuk Diselesaikan**
+- Lengkapi bagian kosong agar program berikut dapat berjalan:
+```python
+# Gunakan identifier untuk menyimpan umur, lalu gunakan keyword 'if' untuk memeriksanya
+____ = 17  # Isi dengan identifier yang sesuai
+if umur >= 18:
+    print("Dewasa")
+else:
+    print("Belum Dewasa")
+```
+
+## Variabel
+
+Variabel adalah tempat untuk menyimpan data atau nilai dalam program, dan nilainya bisa berubah-ubah selama program berjalan. Dalam Python, variabel tidak perlu dideklarasikan dengan tipe data tertentu terlebih dahulu—cukup beri nama dan isi nilainya, lalu Python akan menentukan tipe datanya secara otomatis. Bayangkan variabel seperti gelas yang bisa menampung berbagai jenis cairan. Gelas itu adalah variabelnya, sementara cairan di dalamnya—misalnya air (angka), jus (teks), atau susu (daftar)—adalah data yang disimpan. Program bekerja dengan mengolah data-data ini, dan variabel adalah wadahnya.
+
+### **Contoh Kode**
+- Berikut adalah contoh sederhana penggunaan variabel di Python dengan komentar untuk memperjelas:
+  ```python
+  # Membuat variabel dan mengisinya dengan nilai
+  x = 10        # Variabel x menyimpan angka bulat (integer)
+  nama = "Budi" # Variabel nama menyimpan teks (string)
+  y = -2        # Variabel y menyimpan angka negatif
+  print(x)      # Mencetak nilai x: 10
+  print(nama)   # Mencetak nilai nama: Budi
+  print(y)      # Mencetak nilai y: -2
+  ```
+
+### **Program untuk Diselesaikan**
+- Lengkapi kode berikut agar variabel `umur` menyimpan nilai 15 dan mencetak pesan "Umur saya 15":
+  ```python
+  # Isi bagian kosong agar program berjalan dengan benar
+  umur = ____
+  print("Umur saya", ____)
+  ```
+
+### **Contoh Permasalahan**
+- Buat program sederhana untuk menyimpan nama dan nilai ujian seseorang dalam dua variabel, lalu cetak pesan seperti "Nama: [nama], Nilai: [nilai]".  
+  *Petunjuk: Gunakan variabel untuk menyimpan nama (string) dan nilai (integer), lalu gunakan `print()` untuk menampilkan hasilnya.*
+
+Berikut adalah section lengkap untuk materi "Tipe Data" dalam Python, berdasarkan kerangka yang sudah kita sepakati. Saya akan menggabungkan pendahuluan singkat dan analogi menjadi satu bagian, menambahkan contoh kode yang relevan (termasuk fungsi konversi antar tipe data dan mencetak float dengan digit tertentu), serta menyusun latihan dan permasalahan sesuai kebutuhan Anda.
+
+---
+
+## Tipe Data
+
+"Tipe data adalah cara Python mengelompokkan informasi yang akan disimpan dalam variabel, seperti angka, teks, atau daftar. Bayangkan tipe data seperti laci di lemari: ada laci khusus untuk kaos kaki (integer), laci untuk buku (string), dan laci untuk perhiasan (float). Setiap laci punya aturan sendiri tentang apa yang bisa disimpan dan bagaimana cara menggunakannya. Di bagian ini, kamu akan belajar tipe data dasar di Python—integer, float, string, dan boolean—serta cara mengubahnya dan mengatur tampilan output-nya."
+
+#### **Contoh Kode**
+Berikut adalah contoh kode yang menunjukkan tipe data dasar, konversi antar tipe data, dan cara mencetak float dengan digit tertentu:
+```python
+# Tipe data dasar
+bilangan_bulat = 10          # Integer
+bilangan_desimal = 3.14159   # Float
+teks = "Halo"                # String
+benar_salah = True           # Boolean
+
+# Konversi antar tipe data
+teks_angka = str(bilangan_bulat)      # Mengubah integer ke string
+angka_dari_teks = int("15")           # Mengubah string ke integer
+desimal_dari_bulat = float(7)         # Mengubah integer ke float
+
+# Mencetak float dengan digit tertentu
+print(f"Pi: {bilangan_desimal:.2f}")  # Menampilkan 2 digit setelah koma: 3.14
+print("Teks dari angka:", teks_angka) # Output: "10"
+print("Angka dari teks:", angka_dari_teks)  # Output: 15
+print("Desimal dari bulat:", desimal_dari_bulat)  # Output: 7.0
+```
+
+#### **Program untuk Diselesaikan**
+Isi bagian kosong agar program berjalan dengan benar:
+```python
+# Konversi string "25" menjadi integer dan tambahkan 10
+teks = "25"
+hasil = ____(teks) + 10
+print("Hasil:", hasil)  # Harus mencetak "Hasil: 35"
+
+# Cetak float 5.6789 dengan 1 digit setelah koma
+angka = 5.6789
+print(f"Angka: {angka:____}")  # Harus mencetak "Angka: 5.7"
+```
+*Jawaban yang diharapkan: `int` untuk konversi dan `.1f` untuk format float.*
+
+#### **Contoh Permasalahan**
+"Buat program yang meminta pengguna memasukkan dua angka (satu integer dan satu float), lalu ubah integer menjadi float, tambahkan keduanya, dan cetak hasilnya dengan 3 digit setelah koma."  
+*Petunjuk: Gunakan `input()`, `int()`, `float()`, dan format `:.3f`.*
+
+Saya perhatikan Anda memberikan contoh penjelasan "Input dan Output" dalam bahasa C menggunakan fungsi seperti `printf()` dan `scanf()` dari library `<stdio.h>`. Namun, karena Anda meminta materi untuk Python, saya akan membuatkan section "Input dan Output" yang sesuai dengan Python berdasarkan kerangka struktur yang sudah kita sepakati sebelumnya. Python memiliki pendekatan yang lebih sederhana dibandingkan C untuk input/output, menggunakan fungsi bawaan seperti `print()` dan `input()`. Berikut adalah section lengkapnya:
+
+---
+
+## Input dan Output
+
+"Di bagian ini, kamu akan belajar cara membuat program yang interaktif dengan menerima masukan dari pengguna (input) dan menampilkan hasilnya (output). Ini penting karena program sering kali perlu berkomunikasi dengan kita. Bayangkan input seperti seseorang yang menulis pesanan di buku catatanmu, dan output seperti kamu membacakan pesanan itu kembali ke mereka."
+
+### **Contoh Kode**
+- Berikut adalah contoh sederhana penggunaan `input()` dan `print()` di Python:
+```python
+# Menerima input nama dari pengguna
+nama = input("Masukkan nama kamu: ")
+# Menampilkan output dengan nama
+print("Halo,", nama, "selamat datang!")
+```
+- *Penjelasan*: Baris pertama meminta pengguna memasukkan nama, lalu menyimpannya di variabel `nama`. Baris kedua mencetak pesan sambutan dengan nama tersebut.
+
+### **Program untuk Diselesaikan**
+- Lengkapi kode berikut agar program meminta usia pengguna dan mencetaknya kembali:
+```python
+# Isi bagian kosong agar program berfungsi
+usia = ____("Masukkan usia kamu: ")
+print("Usia kamu adalah", usia)
+```
+- *Jawaban yang diharapkan*: `usia = input("Masukkan usia kamu: ")`
+
+### **Contoh Permasalahan**
+- "Buat program yang meminta pengguna memasukkan dua angka, lalu menampilkan jumlah dari kedua angka tersebut."
+- *Petunjuk*: Gunakan `input()` untuk mengambil dua angka, ubah input menjadi tipe data integer dengan `int()`, lalu cetak hasil penjumlahannya dengan `print()`.
+
+*Contoh solusi:*
+```python
+angka1 = int(input("Masukkan angka pertama: "))
+angka2 = int(input("Masukkan angka kedua: "))
+jumlah = angka1 + angka2
+print("Jumlahnya adalah", jumlah)
+```
+
+Berikut adalah penyusunan materi untuk section **"Operator"** dalam bahasa Python berdasarkan kerangka struktur yang telah kita sepakati. Saya akan menggabungkan **Pendahuluan Singkat** dan **Analogi** menjadi satu bagian untuk efisiensi, serta menyesuaikan isi dengan konteks Python dan informasi yang Anda berikan.
+
+---
+
+## Operator
+
+"Di bagian ini, kamu akan belajar tentang operator, yaitu alat-alat dasar dalam Python untuk memanipulasi data, seperti menjumlahkan angka atau membandingkan nilai. Bayangkan operator seperti alat-alat di kotak perkakas: ada palu untuk memaku (operator assignment), kalkulator untuk menghitung (operator aritmatika), atau bahkan lampu sorot untuk memeriksa sesuatu (operator relasional). Operator ini penting karena membantu kita mengolah data dengan cepat dan mudah dalam program."
+
+---
+
+### **Contoh Kode**
+Berikut adalah contoh penggunaan berbagai jenis operator dalam Python:
+```python
+# Operator Assignment
+x = 10  # Menyimpan nilai 10 ke variabel x
+x += 5  # Menambah x dengan 5, sekarang x = 15
+
+# Operator Aritmatika
+a = 7 + 3  # Penjumlahan, hasilnya 10
+b = 10 - 4  # Pengurangan, hasilnya 6
+c = 5 * 2  # Perkalian, hasilnya 10
+d = 15 / 3  # Pembagian, hasilnya 5.0
+e = 17 % 2  # Modulo, sisa bagi, hasilnya 1
+
+# Operator Increment (tidak ada ++ di Python, gunakan +=)
+x = 5
+x += 1  # Increment, sekarang x = 6
+
+# Operator Relasional
+print(5 > 3)  # True, karena 5 lebih besar dari 3
+print(4 == 4)  # True, karena 4 sama dengan 4
+
+# Operator Logika
+print(5 > 3 and 4 < 10)  # True, karena kedua kondisi benar
+```
+
+---
+
+### **Program untuk Diselesaikan**
+Lengkapi bagian kosong agar program berikut menghitung hasil perhitungan sederhana:
+```python
+# Hitung total setelah diskon 20%
+harga = 1000
+diskon = ____  # Isi dengan perhitungan diskon (20% dari harga)
+total = harga - diskon
+print("Total setelah diskon:", total)
+```
+*Jawaban yang diharapkan: `diskon = harga * 0.2`, output: `Total setelah diskon: 800`.*
+
+---
+
+### **Contoh Permasalahan**
+"Buat program yang memeriksa apakah sebuah angka lebih besar dari 10 DAN genap. Jika ya, cetak 'Angka memenuhi syarat', jika tidak, cetak 'Angka tidak memenuhi syarat'."  
+*Petunjuk: Gunakan operator relasional (`>`), modulo (`%`), dan logika (`and`).*
+
+*Contoh solusi:*
+```python
+angka = 12
+if angka > 10 and angka % 2 == 0:
+    print("Angka memenuhi syarat")
+else:
+    print("Angka tidak memenuhi syarat")
+```
+
+---
