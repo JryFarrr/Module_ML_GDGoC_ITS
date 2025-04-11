@@ -716,3 +716,6 @@ ml_model.predict()  # Output: Model sedang memprediksi...
 **Penjelasan**
 
 Penggunaan *class* mempermudah pengelolaan data dan model dalam skala besar, yang sangat berguna dalam pengembangan sistem Machine Learning. Dengan *class*, Anda dapat mengelompokkan fungsi seperti pelatihan (*training*) dan prediksi (*prediction*) dalam satu entitas yang terorganisir.
+
+# HandsON
+https://colab.research.google.com/drive/1lmDbH940JZas7FoRSoSc-CcQmZyaMwqU#scrollTo=CjZaPzI2v9uH
