@@ -410,10 +410,19 @@ print("Total setelah diskon:", total)
 
 # Control Flow dalam Python
 
-## **1. If, Elif, Else**
+Control flow dalam Python digunakan untuk mengatur alur eksekusi program berdasarkan kondisi atau perulangan tertentu. Dalam penjelasan ini, kita akan membahas penggunaan `if`, `elif`, `else` untuk pengkondisian, perulangan dengan `for` dan `while`, serta penjelasan rinci tentang fungsi dengan analogi yang mudah dipahami.
 
-Control flow digunakan untuk mengatur alur program berdasarkan kondisi tertentu.
+---
 
+## 1. If, Elif, Else
+
+Struktur `if`, `elif`, dan `else` memungkinkan program untuk membuat keputusan berdasarkan kondisi tertentu.
+
+- **`if`**: Mengevaluasi kondisi; jika benar (`True`), blok kode di dalamnya dijalankan.
+- **`elif`**: Memeriksa kondisi tambahan jika `if` sebelumnya salah (`False`).
+- **`else`**: Menjalankan blok kode jika semua kondisi sebelumnya salah.
+
+### Contoh Kode
 ```python
 x = 10
 if x > 5:
@@ -423,67 +432,93 @@ elif x == 5:
 else:
     print("x kurang dari 5")
 ```
+**Output**: `"x lebih besar dari 5"`  
+Penjelasan: Karena `x = 10` lebih besar dari 5, hanya blok `if` yang dijalankan.
 
-### **Program untuk Diselesaikan**
-
-Lengkapi kode berikut agar dapat mencetak "Lulus" jika nilai >= 70 dan "Tidak Lulus" jika kurang dari 70.
+### Program untuk Diselesaikan
+Lengkapi kode berikut agar mencetak "Lulus" jika nilai >= 70 dan "Tidak Lulus" jika kurang dari 70.
 
 ```python
-nilai = int(input("Masukkan nilai: "))
-if ____:
+nilai = __(input("Masukkan nilai: "))
+if nilai __ 70:
     print("Lulus")
-else:
+___:
     print("Tidak Lulus")
 ```
+**Penjelasan**: Kondisi `nilai >= 70` memeriksa apakah input pengguna lebih besar atau sama dengan 70. Jika ya, outputnya "Lulus"; jika tidak, "Tidak Lulus".
 
-*Jawaban yang diharapkan: **************`nilai >= 70`**************.*
-
-### **Contoh Permasalahan**
-
+### Contoh Permasalahan
 "Buat program yang meminta pengguna memasukkan usia. Jika usia lebih dari atau sama dengan 18, cetak 'Dewasa', jika tidak cetak 'Anak-anak'."
 
-*Petunjuk: Gunakan **********`if`********** dan **********`else`********** untuk membandingkan usia dengan 18.*
+#### Solusi
+```python
+usia = int(input("Masukkan usia: "))
+if usia >= 18:
+    print("Dewasa")
+else:
+    print("Anak-anak")
+```
+**Penjelasan**: Program meminta input usia, lalu menggunakan `if` untuk membandingkan dengan 18. Jika `usia >= 18`, outputnya "Dewasa"; jika tidak, "Anak-anak".
 
 ---
 
 ## 2. Perulangan
 
+Perulangan memungkinkan eksekusi berulang atas blok kode. Python menyediakan dua jenis utama: `for` dan `while`.
+
+### For Loop
+`for` digunakan untuk mengulang sebanyak elemen dalam urutan (misalnya, `range`).
+
+#### Contoh Kode
 ```python
 for i in range(5):
     print(i)  # Output: 0, 1, 2, 3, 4
 ```
+**Penjelasan**: `range(5)` menghasilkan urutan dari 0 hingga 4, dan setiap nilai dicetak.
 
+### While Loop
+`while` mengulang blok kode selama kondisi tertentu benar.
+
+#### Contoh Kode
 ```python
 x = 0
 while x < 5:
     print(x)
     x += 1
 ```
+**Output**: `0, 1, 2, 3, 4`  
+**Penjelasan**: Selama `x < 5`, nilai `x` dicetak dan ditambah 1. Ketika `x` mencapai 5, perulangan berhenti.
 
-### **Program untuk Diselesaikan**
-
+### Program untuk Diselesaikan
 Lengkapi kode berikut agar mencetak angka 1 sampai 10 tetapi berhenti ketika mencapai angka 7.
 
 ```python
-for i in range(1, 11):
-    if ____:
-        break
+for i in ___(1, __):
+    if i == 7:
+        ___
     print(i)
 ```
+**Output**: `1, 2, 3, 4, 5, 6`  
+**Penjelasan**: `break` menghentikan perulangan saat `i == 7`, sehingga angka 7 dan setelahnya tidak dicetak.
 
-*Jawaban yang diharapkan: **************`i == 7`**************.*
-
-### **Contoh Permasalahan**
-
+### Contoh Permasalahan
 "Buat program yang mencetak angka dari 1 hingga 10, tetapi melewatkan angka 5."
 
-*Petunjuk: Gunakan **********`continue`**********.*
+#### Solusi
+```python
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)
+```
+**Output**: `1, 2, 3, 4, 6, 7, 8, 9, 10`  
+**Penjelasan**: `continue` melewati iterasi saat `i == 5`, sehingga 5 tidak dicetak, tetapi perulangan berlanjut.
 
 ---
 
 # **Fungsi**
 
-Fungsi digunakan untuk menyusun kode agar lebih modular dan dapat digunakan kembali.
+Fungsi dalam pemrograman adalah cara untuk menyusun kode agar lebih teratur, modular, dan dapat digunakan kembali. Bayangkan fungsi sebagai resep dalam memasak. Ketika Anda ingin membuat kue, Anda mengikuti resep yang berisi langkah-langkah spesifik untuk mencampur bahan dan menghasilkan kue yang lezat. Dalam pemrograman, fungsi adalah "resep" serupa: sekumpulan instruksi yang melakukan tugas tertentu, yang bisa Anda panggil kapan saja dengan memberikan "bahan" (input) yang diperlukan.
 
 ```python
 def tambah(a, b):
@@ -492,6 +527,7 @@ def tambah(a, b):
 hasil = tambah(3, 4)
 print(hasil)  # Output: 7
 ```
+Dalam kode ini, fungsi tambah adalah resep untuk menjumlahkan dua angka. Anda memberikan dua bahan, yaitu a dan b, lalu fungsi ini mengembalikan hasil penjumlahannya. Ketika Anda memanggil tambah(3, 4), fungsi mengolah input tersebut dan menghasilkan 7, seperti kue yang jadi setelah Anda mencampur tepung dan gula sesuai resep.
 
 ## **Program untuk Diselesaikan**
 
