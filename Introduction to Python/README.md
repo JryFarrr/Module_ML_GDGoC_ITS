@@ -1,6 +1,3 @@
-![Python GIF](https://media.giphy.com/media/ZBxATDPH7pHAk/giphy.gif)
-
-Selamat datang di dunia pemrograman Python! Dalam modul ini, saya akan menjelaskan dasar-dasar pemrograman Python, termasuk apa itu IDE (khususnya Google Colab sebagai tempat menulis kode), apa itu coding, dan bagaimana struktur program Python itu dibentuk. Saya akan berusaha membuat penjelasan ini sederhana, ramah, dan mudah dipahami—seperti ngobrol santai bareng temen—supaya kamu merasa nyaman meskipun baru pertama kali belajar pemrograman. Yuk, kita mulai!
 
 ---
 
@@ -637,11 +634,17 @@ p1.greet()  # Output: Hello, my name is Alice and I am 25 years old.
 
 *Petunjuk: Gunakan ****`__init__`**** untuk mendefinisikan atribut dan method untuk mencetak informasi.*
 
-# **Dasar OOP dan Relevansi di Machine Learning**
+Ya, Anda benar. Pembahasan di atas lebih fokus pada penggunaan *class* daripada konsep Object-Oriented Programming (OOP) secara menyeluruh. OOP mencakup prinsip-prinsip seperti *encapsulation*, *inheritance*, *polymorphism*, dan *abstraction*, yang tidak dibahas secara mendalam di sini. Contoh yang diberikan lebih menekankan pada pembuatan dan penggunaan *class* sederhana.
 
-OOP sangat penting dalam Machine Learning karena membantu mengorganisir kode secara modular dan reusable. Framework seperti TensorFlow dan PyTorch menggunakan konsep OOP dalam implementasi model.
+Berikut adalah versi yang diperbarui dengan judul dan penjelasan yang lebih relevan:
 
-Contoh implementasi sederhana OOP dalam ML:
+---
+
+# **Dasar Penggunaan Class dan Relevansinya di Machine Learning**
+
+Penggunaan *class* sangat penting dalam Machine Learning karena membantu mengorganisir kode secara modular dan reusable. Framework seperti TensorFlow dan PyTorch memanfaatkan konsep *class* untuk mengimplementasikan model, lapisan (*layers*), dan fungsi lainnya.
+
+**Contoh implementasi sederhana *class* dalam ML:**
 
 ```python
 class Model:
@@ -655,7 +658,7 @@ ml_model = Model("Neural Network")
 ml_model.train()  # Output: Training model Neural Network...
 ```
 
-## **Program untuk Diselesaikan**
+**Program untuk Diselesaikan**
 
 Lengkapi kode berikut untuk menambahkan method `predict()` yang mencetak "Model sedang memprediksi...".
 
@@ -668,12 +671,12 @@ class Model:
         print(f"Training model {self.name}...")
     
     def predict(self):
-        ____  # Lengkapi kode ini
+        print("Model sedang memprediksi...")  # Kode yang sudah dilengkapi
 
 ml_model = Model("Decision Tree")
-ml_model.predict()
+ml_model.predict()  # Output: Model sedang memprediksi...
 ```
 
-*Jawaban yang diharapkan: ****`print("Model sedang memprediksi...")`****.*
+**Penjelasan**
 
-OOP mempermudah pengelolaan data dan model dalam skala besar, yang sangat berguna dalam pengembangan sistem Machine Learning.
+Penggunaan *class* mempermudah pengelolaan data dan model dalam skala besar, yang sangat berguna dalam pengembangan sistem Machine Learning. Dengan *class*, Anda dapat mengelompokkan fungsi seperti pelatihan (*training*) dan prediksi (*prediction*) dalam satu entitas yang terorganisir.
