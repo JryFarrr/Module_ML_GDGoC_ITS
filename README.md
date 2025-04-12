@@ -1,5 +1,4 @@
-﻿# Module_ML_GDGoC_ITS
-# **Modul Pembelajaran Machine Learning GDGOC ITS**  
+# **Modul Machine Learning GDGOC ITS**  
 Perjalanan ramah pemula untuk menguasai dasar-dasar Machine Learning dan Data Science dengan Python!
 
 ---
